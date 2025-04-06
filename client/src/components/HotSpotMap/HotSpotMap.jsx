@@ -1,6 +1,7 @@
 import React from 'react'
 import './HotSpotMap.css'
-
+import map1 from '../../assets/map_1.png'
+import map2 from '../../assets/map_2.png'
 
 const HotSpotMap = () => {
     return (
