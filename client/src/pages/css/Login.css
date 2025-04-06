@@ -129,6 +129,11 @@ input:valid ~ label {
   text-decoration: underline;
 }
 
+.error-message{
+  color: red;
+  text-align: center;
+  padding-bottom: 20px;
+}
 
 @media (max-width: 1280px) {
   .form-box {

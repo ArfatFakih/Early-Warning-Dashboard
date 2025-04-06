@@ -11,6 +11,7 @@ const SignUp = () => {
     email: '',
     password: '',
   });
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const state = location.pathname === '/login' ? 'Login' : 'Sign Up';
 
@@ -40,27 +41,32 @@ const SignUp = () => {
     }
   };
 
-  const signup = async () => {
-    console.log('Signup Function Executed', formData);
-    let responseData;
-    await fetch('http://localhost:4000/signup', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/form-data',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => (responseData = data));
-
-    if (responseData.success) {
-      localStorage.setItem('auth-token', responseData.token);
-      window.location.replace('/');
-    } else {
-      alert(responseData.errors);
+  const signup = async (e) => {
+    e.preventDefault();
+    if (!formData.username || !formData.email || !formData.password) {
+      return setErrorMessage('Please fill out all fields.');
+    }
+  
+    try {
+      setErrorMessage(null);
+      const res = await fetch('/api/auth/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+  
+      const data = await res.json();
+  
+      if (!res.ok) {
+        return setErrorMessage(data.message || 'Something went wrong on the server.');
+      }
+  
+      navigate('/');
+    } catch (error) {
+      setErrorMessage(error.message || 'Something went wrong. Try again later.');
     }
   };
+  
 
   return (
     <div className="login">
@@ -102,9 +108,12 @@ const SignUp = () => {
                 <label>Password</label>
               </div>
             </div>
+            {errorMessage && (
+              <p className="error-message">{errorMessage}</p>
+            )}
             <button
-              onClick={() => {
-                state === 'Login' ? login() : signup();
+              onClick={(e) => {
+                state === 'Login' ? login() : signup(e);
               }}
               className="login-button"
             >
