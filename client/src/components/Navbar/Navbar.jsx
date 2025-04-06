@@ -8,10 +8,10 @@ const Navbar = () => {
       <div className="navbar-logo">EARLY WARNING</div>
       <ul className="navbar-links">
         <li><Link style={{ textDecoration: 'none'}} to='/home'>Home</Link></li>
-        <li>About</li>
-        <li>Teams</li>
-        <li>Content</li>
-        <li>My Profile</li>
+        <li>Current Events</li>
+        <li>Data Analysis Tool</li>
+        <li>News Feed</li>
+        <li>User Settings</li>
       </ul>
       <div className="navbar-buttons">
         <button className="login-btn"><Link style={{ textDecoration: 'none'}} to='/login'>LOGIN</Link></button>

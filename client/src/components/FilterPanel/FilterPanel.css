@@ -1,0 +1,47 @@
+.filter-panel {
+    background-color: #0056a3;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+  
+.filter-panel h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+  
+.filter-panel label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+.filter-input {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.filter-input option {
+    color: black;
+}
+  
+.apply-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
