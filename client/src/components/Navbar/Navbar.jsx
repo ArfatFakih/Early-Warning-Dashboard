@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">EARLY WARNING</div>
       <ul className="navbar-links">
-        <li><Link style={{ textDecoration: 'none'}} to='/'>Home</Link></li>
+        <li><Link style={{ textDecoration: 'none'}} to='/home'>Home</Link></li>
         <li>About</li>
         <li>Teams</li>
         <li>Content</li>
@@ -15,7 +15,7 @@ const Navbar = () => {
       </ul>
       <div className="navbar-buttons">
         <button className="login-btn"><Link style={{ textDecoration: 'none'}} to='/login'>LOGIN</Link></button>
-        <button className="signup-btn"><Link style={{ textDecoration: 'none'}} to='/signup'>Sign UP</Link></button>
+        <button className="signup-btn"><Link style={{ textDecoration: 'none'}} to='/'>Sign UP</Link></button>
       </div>
     </nav>
   )

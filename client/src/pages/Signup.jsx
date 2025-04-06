@@ -35,7 +35,7 @@ const SignUp = () => {
 
     if (responseData.success) {
       localStorage.setItem('auth-token', responseData.token);
-      window.location.replace('/');
+      window.location.replace('/home');
     } else {
       alert(responseData.errors);
     }
@@ -61,7 +61,7 @@ const SignUp = () => {
         return setErrorMessage(data.message || 'Something went wrong on the server.');
       }
   
-      navigate('/');
+      navigate('/home');
     } catch (error) {
       setErrorMessage(error.message || 'Something went wrong. Try again later.');
     }
@@ -129,7 +129,7 @@ const SignUp = () => {
             ) : (
               <p className="register">
                 Create an account?{' '}
-                <span onClick={() => navigate('/signup')} className="login-link">
+                <span onClick={() => navigate('/')} className="login-link">
                   Click here
                 </span>
               </p>

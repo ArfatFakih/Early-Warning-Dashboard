@@ -33,7 +33,7 @@ const Login = () => {
 
     if (responseData.success) {
       localStorage.setItem('auth-token', responseData.token);
-      window.location.replace('/');
+      window.location.replace('/home');
     } else {
       alert(responseData.errors);
     }
@@ -122,7 +122,7 @@ const Login = () => {
               <p className="register">
                 Create an account?{' '}
                 <span
-                  onClick={() => navigate('/signup')}
+                  onClick={() => navigate('/')}
                   className="login-link"
                 >
                   Click here
