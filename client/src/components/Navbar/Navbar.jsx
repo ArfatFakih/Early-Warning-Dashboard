@@ -1,24 +1,42 @@
-import React from 'react'
-import './Navbar.css'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import './Navbar.css';
+import { Link } from 'react-router-dom';
+import guardians_image from '../../assets/guardians_logo.png';
+import { FaUserCog } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">EARLY WARNING</div>
-      <ul className="navbar-links">
-        <li><Link style={{ textDecoration: 'none'}} to='/home'>Home</Link></li>
-        <li>Current Events</li>
-        <li>Data Analysis Tool</li>
-        <li>News Feed</li>
-        <li>User Settings</li>
-      </ul>
-      <div className="navbar-buttons">
-        <button className="login-btn"><Link style={{ textDecoration: 'none'}} to='/login'>LOGIN</Link></button>
-        <button className="signup-btn"><Link style={{ textDecoration: 'none'}} to='/'>Sign UP</Link></button>
+      {/* Left navigation links */}
+      <div className="navbar-left">
+        <ul className="nav-links">
+          <li><Link to='/home'>Home</Link></li>
+          <li><Link to='/events'>Current Events</Link></li>
+        </ul>
+      </div>
+      
+      {/* Centered logo */}
+      <div className="navbar-logo">
+        <Link to="/">
+          <img src={guardians_image} alt="Guardians Logo" className="logo-image" />
+        </Link>
+      </div>
+      
+      {/* Right navigation links */}
+      <div className="navbar-right">
+        <ul className="nav-links">
+          <li><Link to='/analysis'>Data Analysis Tool</Link></li>
+          <li><Link to='/news'>News Feed</Link></li>
+        </ul>
+        
+        {/* User icon and login button */}
+        <div className="navbar-controls">
+          <div className="user-icon"><FaUserCog size={20} /></div>
+          <button className="login-btn"><Link to='/login'>LOGIN</Link></button>
+        </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

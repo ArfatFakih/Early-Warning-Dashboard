@@ -1,28 +1,196 @@
 .hotspot-maps {
-    background-color: #f7f7f7;
-    padding: 20px;
+    position: relative;
+    padding: 40px;
     border-radius: 12px;
-    text-align: center;
-    max-width: 1000px;
-    margin: 40px auto;
-}
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0;
+    color: #fff;
+    overflow: hidden;
+  }
   
-.hotspot-maps h2 {
-    margin-bottom: 20px;
-    color: #333;
-}
+  .gradient-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #114e60, #325288, #7F9DB1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+  }
   
-.map-container {
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .title-container {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
-}
-
-.map-image {
-    max-width: 100%;
+  }
+  
+  .main-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  
+  .main-line-connector {
+    position: relative;
+    width: 5px;
+    height: 120px; /* Increased from 90px to 120px */
+    background-color: #d4af37;
+    margin-bottom: 15px;
+  }
+  
+  .map-section {
+    margin-bottom: 60px;
+  }
+  
+  .map-section.no-margin {
+    margin-top: -55px; /* Reduces the gap between sections */
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .section-header.no-line {
+    margin-top: 0; /* Removes top margin for the header without line */
+  }
+  
+  .line-connector {
+    position: relative;
+  }
+  
+  .line-connector.horizontal {
+    width: 150px; /* Increased from 100px to 150px */
+    height: 5px;
+    background-color: #d4af37;
+    margin-right: 15px;
+  }
+  
+  .line-connector.vertical {
+    width: 5px;
+    height: 180px; /* Increased from 140px to 180px */
+    background-color: #d4af37;
+    margin-bottom: 15px;
+  }
+  
+  .ball-end {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #d4af37;
+    border-radius: 50%;
+  }
+  
+  /* Ball positions for vertical lines */
+  .ball-end.top {
+    top: -7px;
+    left: -4.5px;
+  }
+  
+  .ball-end.bottom {
+    bottom: -7px;
+    left: -4.5px;
+  }
+  
+  /* Ball positions for horizontal lines */
+  .ball-end.left {
+    left: -7px;
+    top: -4.5px;
+  }
+  
+  .ball-end.right {
+    right: -7px;
+    top: -4.5px;
+  }
+  
+  .section-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  
+  .right-aligned {
+    margin-left: auto;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .map-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .map-wrapper {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .map-image {
+    width: 100%;
     height: auto;
     border: 2px solid #ccc;
     border-radius: 8px;
-}
+  }
   
+  .map-description {
+    flex: 1;
+    text-align: left;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .left-aligned {
+    text-align: left;
+  }
+  
+  .reverse .map-content {
+    flex-direction: row-reverse;
+  }
+  
+  @media (max-width: 768px) {
+    .map-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .reverse .map-content {
+      flex-direction: column;
+    }
+    
+    .map-wrapper {
+      max-width: 100%;
+    }
+    
+    .line-connector.horizontal {
+      width: 100px;
+    }
+    
+    .line-connector.vertical {
+      height: 120px;
+    }
+    
+    .main-line-connector {
+      height: 80px;
+    }
+  }
