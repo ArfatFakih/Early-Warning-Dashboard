@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="navbar-left">
         <ul className="nav-links">
           <li><Link to='/home'>Home</Link></li>
-          <li><Link to='/events'>Current Events</Link></li>
+          <li><Link to='/currentevents'>Current Events</Link></li>
         </ul>
       </div>
       
@@ -25,7 +25,7 @@ const Navbar = () => {
       {/* Right navigation links */}
       <div className="navbar-right">
         <ul className="nav-links">
-          <li><Link to='/analysis'>Data Analysis Tool</Link></li>
+          <li><Link to='/dataanalysis'>Data Analysis Tool</Link></li>
           <li><Link to='/news'>News Feed</Link></li>
         </ul>
         

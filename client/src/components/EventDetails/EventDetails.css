@@ -1,0 +1,44 @@
+.event-detail-container {
+    background-color: #014b94;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .event-detail-container h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .event-section {
+    margin-top: 15px;
+  }
+  
+  .event-section ul {
+    margin-left: 20px;
+  }
+  
+  .download-button {
+    margin-top: 20px;
+    background-color: #ffb347;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .download-button:hover {
+    background-color: #e19a32;
+  }
+  
+  .event-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #fff;
+  }
+  

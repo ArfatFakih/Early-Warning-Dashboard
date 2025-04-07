@@ -1,0 +1,71 @@
+/* DataVisualizationPage.css */
+
+.page-container {
+    min-height: 100vh;
+    background-color: #f4d6a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    background-color: #064789;
+    border-radius: 10px;
+    padding: 24px;
+    width: 100%;
+    max-width: 1200px;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .input-group {
+    margin-bottom: 16px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  .button {
+    background-color: #ff7f11;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #e46c00;
+  }
+  
+  .visualization-output {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 16px;
+  }
+  
+  .key-findings {
+    margin-top: 20px;
+  }
+  
+  .key-findings p {
+    margin: 6px 0;
+  }
+  

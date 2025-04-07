@@ -1,0 +1,35 @@
+.events-container {
+    background-color: #004c99;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+.events-container h2{
+    margin-bottom: 15px;
+}
+
+  .event-block {
+    margin-bottom: 20px;
+  }
+  
+  .event-title {
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  .event-details {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #f1f1f1; /* adjust as needed */
+  }
+  
+  
