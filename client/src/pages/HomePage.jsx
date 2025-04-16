@@ -3,6 +3,7 @@ import './css/HomePage.css'
 import Navbar from '../components/Navbar/Navbar'
 import FilterPanel from '../components/FilterPanel/FilterPanel'
 import HotSpotMap from '../components/HotSpotMap/HotSpotMap'
+import Footer from '../components/Footer/Footer'
 
 const HomePage = () => {
   return (
@@ -15,6 +16,9 @@ const HomePage = () => {
       </div>
       <div>
         <HotSpotMap />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   )

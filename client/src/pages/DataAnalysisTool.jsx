@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import DataAnalysisComponent from '../components/DataAnalysis/DataAnalysisComponent'
+import StabilityPredictor from '../components/StabilityPredictor/StabilityPredictor'
 
 const DataAnalysisTool = () => {
   return (
@@ -9,7 +10,7 @@ const DataAnalysisTool = () => {
             <Navbar />
         </div>
         <div>
-          <h1>content</h1> 
+          <StabilityPredictor />
         </div>
     </div>
   )

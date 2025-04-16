@@ -1,0 +1,32 @@
+.news-detail-container {
+  background-color: white;
+  color: #141414;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.news-impact {
+  background-color: transparent;
+  margin: 25px 0;
+  padding: 10px 0;
+}
+
+.news-impact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-impact li {
+  font-size: 20px;
+  color: #141414;
+  padding: 10px 0 10px 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.news-icon {
+  margin-right: 10px;
+  font-size: 20px;
+  line-height: 1.4;
+}

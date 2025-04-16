@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import CurrentEventsComponent from '../components/currentEvent/CurrentEventsComponent'
+import Footer from '../components/Footer/Footer'
 
 const CurrentEvents = () => {
   return (
@@ -10,6 +11,9 @@ const CurrentEvents = () => {
         </div>
         <div className="current-events-details">
             <CurrentEventsComponent />
+        </div>
+        <div className="current-events-footer">
+            <Footer />
         </div>
     </div>
   )

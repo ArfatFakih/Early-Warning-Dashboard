@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f3f6f8;
+    padding: 40px 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .footer-logo {
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 300px;
+    height: 60px;
+  }
+  
+  .footer-title {
+    font-size: 20px;
+    color: #25317a;
+    font-weight: 600;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 12px;
+    color: #25317a;
+    font-size: 17px;
+    cursor: pointer;
+    transition: text-decoration 0.3s;
+  }
+  
+  .footer-links li:hover {
+    text-decoration: underline;
+  }
+  

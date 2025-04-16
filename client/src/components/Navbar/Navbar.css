@@ -1,12 +1,11 @@
 .navbar {
-    background-color: #114E60; /* Transparent background */
+    background-color: #f3f6f8; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     height: 80px;
     position: relative;
-    /* Remove the red line by not including any border properties */
   }
   
   .navbar-left {
@@ -24,7 +23,7 @@
   }
   
   .logo-image {
-    height: 130px;
+    height: 40px;
     width: auto;
   }
   
@@ -45,12 +44,11 @@
   }
   
   .nav-links li {
-    color: white;
     cursor: pointer;
   }
   
   .nav-links li a {
-    color: white;
+    color: #25317a;
     text-decoration: none;
   }
   
@@ -62,15 +60,15 @@
   }
   
   .user-icon {
-    color: white;
+    color: #25317a;
     display: flex;
     align-items: center;
   }
   
   .login-btn {
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: #25317a;
+    border: 1px solid #25317a;
     border-radius: 4px;
     padding: 8px 16px;
     cursor: pointer;
@@ -79,11 +77,10 @@
   }
   
   .login-btn:hover {
-    background-color: #00bfff;
-    border-color: #00bfff;
+    opacity: 0.5;
   }
   
   .login-btn a {
-    color: white;
+    color: #25317a;
     text-decoration: none;
   }

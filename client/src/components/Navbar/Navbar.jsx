@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import guardians_image from '../../assets/guardians_logo.png';
+import nav_logo from '../../assets/nav-logo.png';
 import { FaUserCog } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -17,9 +17,7 @@ const Navbar = () => {
       
       {/* Centered logo */}
       <div className="navbar-logo">
-        <Link to="/">
-          <img src={guardians_image} alt="Guardians Logo" className="logo-image" />
-        </Link>
+          <img src={nav_logo} alt="Guardians Logo" className="logo-image" />
       </div>
       
       {/* Right navigation links */}

@@ -17,13 +17,13 @@ const EventDetails = () => {
         </div>
         <div className="event-detail-container">
             <h2>Event Title: {event.title}</h2>
-            <p><strong>Date:</strong> {event.date}</p>
+            <p className='p-container'><strong>Date:</strong> {event.date}</p>
     
             <div className="event-section">
             <p><strong>Description:</strong><br />{event.details}</p>
             </div>
     
-            <div className="event-section">
+            <div className="event-section event-impact">
             <p><strong>Key Insights:</strong></p>
             <ul>
                 {event.insights?.map((insight, idx) => (
@@ -32,7 +32,7 @@ const EventDetails = () => {
             </ul>
             </div>
     
-            <div className="event-section">
+            <div className="event-section event-impact-1">
             <p><strong>Related Events:</strong></p>
             <ul>
                 {event.relatedEvents?.map((related, idx) => (
@@ -43,7 +43,7 @@ const EventDetails = () => {
     
             <button className="download-button">Download Detailed Report</button>
     
-            <div className="event-section">
+            <div className="event-section event-map">
             <p><strong>Visual Representation:</strong></p>
             <img
                 src={event.image || "/default-map.png"}

@@ -1,16 +1,69 @@
 .event-detail-container {
-    background-color: #014b94;
-    color: white;
-    padding: 20px;
+    color: #25317a;
+    /* padding: 20px; */
     border-radius: 10px;
-    margin: 20px;
+    /* margin: 20px; */
   }
   
   .event-detail-container h2 {
-    color: #ffffff;
+    color: #25317a;
     margin-bottom: 10px;
+    padding: 20px;
+  }
+
+  .event-detail-container p{
+    font-size: 20px;
+    padding: 10px 20px;
   }
   
+  strong{
+    /* padding: 10px 20px; */
+    font-size: 25px;
+  }
+
+
+ .event-impact {
+  background-color: #f3f6f8; 
+  margin: 15px 0px;
+  padding: 25px 15px;
+ }
+
+ .event-impact p{
+  font-size: 25px;
+ }
+
+ .event-impact li{
+  font-size: 20px;
+  color: #141414;
+  padding: 0px 20px;
+  padding-top: 10px;
+ }
+
+ ul{
+  padding: 20px;
+ }
+
+ .event-impact-1 {
+  margin: 25px 0px;
+  padding: 25px 15px;
+ }
+
+ .event-impact-1 p{
+  font-size: 25px;
+  padding: 10px 20px;
+ }
+
+ .event-impact-1 li{
+  font-size: 20px;
+  color: #141414;
+  padding: 0px 20px;
+  padding-top: 10px;
+ }
+
+ .event-impact-1 ul{
+  padding: 20px;
+ }
+
   .event-section {
     margin-top: 15px;
   }
@@ -20,9 +73,9 @@
   }
   
   .download-button {
-    margin-top: 20px;
-    background-color: #ffb347;
-    color: #000;
+    margin: 20px 30px;
+    background-color: #c83c87;
+    color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 6px;
@@ -39,6 +92,12 @@
     max-width: 600px;
     border-radius: 10px;
     margin-top: 10px;
+    /* padding-left: 100px; */
     border: 2px solid #fff;
+  }
+
+  .event-map {
+    background-color: #f3f6f8; 
+    padding: 20px 30px;
   }
   
