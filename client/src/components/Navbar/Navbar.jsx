@@ -29,7 +29,7 @@ const Navbar = () => {
         
         {/* User icon and login button */}
         <div className="navbar-controls">
-          <div className="user-icon"><FaUserCog size={20} /></div>
+          <div className="user-icon"><Link to = '/UserSettings'><FaUserCog size={20} /></Link></div>
           <button className="login-btn"><Link to='/login'>LOGIN</Link></button>
         </div>
       </div>

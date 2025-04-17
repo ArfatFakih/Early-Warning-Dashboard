@@ -1,0 +1,66 @@
+.user-settings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 5px solid #f3f6f8; 
+  }
+  
+  .users-table th, 
+  .users-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .users-table th {
+    background-color: #f3f6f8; 
+    color: #25317a;
+    font-weight: bold;
+  }
+  
+  .users-table tbody tr:hover {
+    background-color: #e6f2ff; 
+    cursor: pointer;
+  }
+  
+  .users-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  .users-table tbody tr:nth-child(even):hover {
+    background-color: #e6f2ff; 
+  }
+  
+  .role-dropdown {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .role-dropdown:focus {
+    outline: none;
+    border-color: #003366;
+  }
+  
+  h1, h2 {
+    color: #003366;
+  }
+  
+  h2 {
+    margin-top: 10px;
+    font-weight: normal;
+  }
