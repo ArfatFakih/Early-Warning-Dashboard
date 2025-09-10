@@ -6,8 +6,8 @@ import Footer from '../components/Footer/Footer'
 const UserSettings = () => {
   // Sample user data
   const [users, setUsers] = useState([
-    { id: 1, name: 'John Doe', email: 'john.doe@example.com', phone: '555-123-4567', role: 'Role 1' },
-    { id: 2, name: 'Jane Smith', email: 'jane.smith@example.com', phone: '555-234-5678', role: 'Role 2' },
+    { id: 1, name: 'Arfat Fakih', email: 'arfat30@example.com', phone: '555-123-4567', role: 'Role 1' },
+    { id: 2, name: 'Sahil Biswas', email: 'sahil.b@example.com', phone: '555-234-5678', role: 'Role 2' },
     { id: 3, name: 'Robert Johnson', email: 'robert.j@example.com', phone: '555-345-6789', role: 'Role 3' },
     { id: 4, name: 'Emily Davis', email: 'emily.davis@example.com', phone: '555-456-7890', role: 'Role 1' },
     { id: 5, name: 'Michael Wilson', email: 'michael.w@example.com', phone: '555-567-8901', role: 'Role 4' },

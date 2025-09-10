@@ -6,6 +6,12 @@ const NewsHeadline = require('../models/news');
 
 const parser = new Parser();
 
+// Create data directory if it doesn't exist
+const dataDir = path.join(__dirname, '../data');
+if (!fs.existsSync(dataDir)) {
+  fs.mkdirSync(dataDir);
+}
+
 // Fetch news function
 async function fetchNews() {
   try {
@@ -27,7 +33,7 @@ async function fetchNews() {
     // Insert new headlines
     await NewsHeadline.insertMany(newsItems);
     
-    // Also save to JSON file as backup
+    // Save to JSON file in data directory to avoid nodemon restarts
     const newsData = newsItems.map(item => ({
       index: item.id,
       title: item.title,
@@ -35,7 +41,7 @@ async function fetchNews() {
     }));
 
     fs.writeFileSync(
-      path.join(__dirname, '../BBC_SCRAPE.JSON'),
+      path.join(dataDir, 'BBC_SCRAPE.JSON'),
       JSON.stringify(newsData, null, 4)
     );
 

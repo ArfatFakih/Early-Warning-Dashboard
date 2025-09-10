@@ -4,7 +4,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 
 // Get the NewsHeadline model
-const NewsHeadline = mongoose.model('NewsHeadline');
+const NewsHeadline = require('../models/news')
 
 // Get all news headlines
 router.get('/', async (req, res) => {
